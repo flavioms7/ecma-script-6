@@ -65,7 +65,31 @@ var temJogosCorrida = jogos.some(function(jogo){
  })
 console.log(temJogosCorrida)
 
+//Reduce
+//Obtem a soma de todos os números de um array
+var numerosSoma = [1,2,3,4,5]
 
+var soma = numerosSoma.reduce(function(soma, numero){
+
+   return soma + numero
+
+}, 0)
+console.log(soma)
+
+var alunosEscola = [
+   {nome: 'João', idade:15},
+   {nome: 'José', idade:18},
+   {nome: 'Maria', idade:20},
+   {nome: 'Tulio', idade:17},
+];
+
+var nomesAlunos = alunosEscola.reduce(function(arrayNomes, alunosEscola){
+arrayNomes.push(alunosEscola.nome)
+
+return arrayNomes
+
+}, [])
+console.log(nomesAlunos)
 
 
 
